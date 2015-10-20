@@ -7,6 +7,10 @@ module.exports = {
     {
       splitters: ['<link '],
       rgx: new RegExp(/(?:href)=['"](?!\w*?:?\/\/)([^'"\{]+)['"].*\/?>/i)
+    },	
+    {
+      splitters: ['<use '],
+      rgx: new RegExp(/(?:xlink:href)=['"](?!\w*?:?\/\/)([^'"\{]+)['"].*\/?>/i)
     },
     // {
     //   splitters: ['<meta '],
